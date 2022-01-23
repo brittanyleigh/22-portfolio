@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Flex,
   Box,
   Accordion,
   AccordionItem,
@@ -9,7 +8,7 @@ import {
   AccordionPanel,
 } from "@chakra-ui/react";
 
-function Nav() {
+function History() {
   return (
     <Box background="white" w={{ base: "90%", md: "50%" }} zIndex={1}>
       <Accordion allowMultiple allowToggle>
@@ -68,4 +67,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default History;
