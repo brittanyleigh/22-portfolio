@@ -1,23 +1,24 @@
 import React from "react";
-import { Box, Text, ChakraProvider, Container } from "@chakra-ui/react";
+import { Box, Text, ChakraProvider, Container, VStack } from "@chakra-ui/react";
 
 import Nav from "../components/Nav";
 import Employment from "../components/Employment";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
     <ChakraProvider>
-      <Box h="100vh" bgGradient="linear(to-b, #e8faff,#c1d9f1)">
-        <Container maxW="container.xl">
+      <Box bgGradient="linear(to-b, #e8faff,#c1d9f1)">
+        <Container
+          minH="100vh"
+          maxW="container.xl"
+          display="flex"
+          flexDir="column"
+          justifyContent="space-between"
+        >
           <Nav />
-          {/*
-        Nav - Name & light/dark toggle
-        Intro box
-        Employment tabs
-        Projects section
-        Social - linkedin, github
-      */}
           <Employment />
+          <Footer />
         </Container>
       </Box>
     </ChakraProvider>
