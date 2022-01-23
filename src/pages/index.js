@@ -1,18 +1,24 @@
 import React from "react";
-import { Box, Text, ChakraProvider } from "@chakra-ui/react";
+import { Box, Text, ChakraProvider, Container } from "@chakra-ui/react";
+
+import Nav from "../components/Nav";
+import Employment from "../components/Employment";
 
 function Home() {
   return (
     <ChakraProvider>
-      <Box p={8}>
-        {/*
+      <Box h="100vh" bgGradient="linear(to-b, #e8faff,#c1d9f1)">
+        <Container maxW="container.xl">
+          <Nav />
+          {/*
         Nav - Name & light/dark toggle
         Intro box
         Employment tabs
         Projects section
         Social - linkedin, github
       */}
-        <Text fontSize="xl">Hello World</Text>
+          <Employment />
+        </Container>
       </Box>
     </ChakraProvider>
   );
