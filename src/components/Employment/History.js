@@ -10,7 +10,7 @@ import {
 
 function History() {
   return (
-    <Box background="white" w={{ base: "90%", md: "50%" }} zIndex={1}>
+    <Box background="white" w={{ base: "90%", md: "100%" }} zIndex={1}>
       <Accordion allowMultiple allowToggle>
         <AccordionItem>
           <h2>
