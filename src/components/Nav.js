@@ -13,7 +13,7 @@ import { GrSun, GrMoon } from "react-icons/gr";
 function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const ariaLabel = colorMode == "light" ? "Toggle Dark" : "Toggle Light";
-  const icon = colorMode == "light" ? <GrMoon /> : <GrSun />;
+  const icon = colorMode == "light" ? <GrMoon boxsize="10em" /> : <GrSun />;
 
   return (
     <Flex alignItems="center" py={6}>

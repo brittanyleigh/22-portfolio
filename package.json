@@ -19,6 +19,7 @@
     "@chakra-ui/react": "^1.7.4",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "chroma-js": "^2.3.0",
     "framer-motion": "^6.2.1",
     "gatsby": "^4.5.4",
     "gatsby-plugin-image": "^2.5.2",

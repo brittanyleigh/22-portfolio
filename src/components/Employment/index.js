@@ -16,7 +16,7 @@ function Nav() {
       <Box
         position="absolute"
         border="2px"
-        borderColor="blue.200"
+        borderColor="blue.500"
         w={{ base: "100%", md: "65%" }}
         h={{ base: "70%", md: "100%" }}
       />

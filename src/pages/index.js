@@ -1,8 +1,9 @@
 import React from "react";
-import { Box, ChakraProvider, Container } from "@chakra-ui/react";
+import { ChakraProvider, Container } from "@chakra-ui/react";
 
 import theme from "../theme.js";
 
+import GradientWrapper from "../containers/gradientWrapper";
 import Nav from "../components/Nav";
 import Employment from "../components/Employment";
 import Footer from "../components/Footer";
@@ -10,7 +11,7 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <ChakraProvider theme={theme}>
-      <Box bgGradient="linear(to-b, #e8faff,#c1d9f1)">
+      <GradientWrapper>
         <Container
           minH="100vh"
           maxW="container.xl"
@@ -22,7 +23,7 @@ function Home() {
           <Employment />
           <Footer />
         </Container>
-      </Box>
+      </GradientWrapper>
     </ChakraProvider>
   );
 }
