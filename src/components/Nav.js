@@ -25,12 +25,14 @@ function Nav() {
       </Box>
       <Spacer />
       <IconButton
+        display="flex"
         onClick={toggleColorMode}
         aria-label={ariaLabel}
         icon={icon}
-        variant="ghost"
+        variant="unstyled"
         colorScheme="blue"
         color={toggleColor}
+        _hover={{ color: "blue.500" }}
       />
     </Flex>
   );

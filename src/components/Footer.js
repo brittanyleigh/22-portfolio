@@ -4,19 +4,20 @@ import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 
 function Footer() {
   const iconColor = useColorModeValue("black", "white");
+
   const items = [
     {
-      icon: <FiGithub size="1.5em" color={iconColor} />,
+      icon: <FiGithub size="1.5em" />,
       link: "https://github.com/brittanyleigh",
       label: "View GitHub profile",
     },
     {
-      icon: <FiLinkedin size="1.5em" color={iconColor} />,
+      icon: <FiLinkedin size="1.5em" />,
       link: "https://www.linkedin.com/in/brittanyisenberg/",
       label: "View LinkedIn profile",
     },
     {
-      icon: <FiMail size="1.5em" color={iconColor} />,
+      icon: <FiMail size="1.5em" />,
       link: "mailto:brittany.isenberg@gmail.com",
       label: "Send Email",
     },
@@ -27,16 +28,19 @@ function Footer() {
       {items.map((item) => {
         return (
           <IconButton
+            display="flex"
             key={item.link}
             as="a"
             aria-label={item.label}
             icon={item.icon}
-            variant="ghost"
+            variant="unstyled"
             colorScheme="blue"
             href={item.link}
             target="_blank"
-            color="black"
             p={4}
+            m={2}
+            color={iconColor}
+            _hover={{ color: "green.500" }}
           />
         );
       })}
