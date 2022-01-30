@@ -2,6 +2,7 @@ import React from "react";
 import { Box, useColorModeValue } from "@chakra-ui/react";
 
 import "@fontsource/catamaran";
+import "@fontsource/just-me-again-down-here";
 
 function GradientWrapper({ children }) {
   const topGradient = useColorModeValue("blue.100", "blue.900");

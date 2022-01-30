@@ -21,7 +21,13 @@ function Nav() {
   return (
     <Flex alignItems="center" py={6}>
       <Box py="2">
-        <Heading size="xl">Brittany Isenberg</Heading>
+        <Heading
+          size="2xl"
+          fontWeight="500"
+          fontFamily="Just Me Again Down Here"
+        >
+          Brittany Howard
+        </Heading>
       </Box>
       <Spacer />
       <IconButton

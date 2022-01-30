@@ -38,12 +38,7 @@ function History() {
       w={{ base: "90%", md: "100%" }}
       zIndex={1}
     >
-      <Accordion
-        allowMultiple
-        allowToggle
-        borderX="solid 1px"
-        borderColor={borderColor}
-      >
+      <Accordion allowToggle borderX="solid 1px" borderColor={borderColor}>
         {historyItems.map((item) => {
           return <HistoryItem key={item.heading} {...item} />;
         })}

@@ -20,6 +20,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@fontsource/catamaran": "^4.5.1",
+    "@fontsource/just-me-again-down-here": "^4.5.2",
     "@fontsource/open-sans": "^4.5.3",
     "chroma-js": "^2.3.0",
     "framer-motion": "^6.2.1",

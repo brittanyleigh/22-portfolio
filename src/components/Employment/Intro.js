@@ -5,8 +5,8 @@ function Intro() {
   return (
     <Box p={4} w="100%" zIndex={1}>
       <Heading px={6} size="lg">
-        I'm a self-taught frontend software engineer. I build clean, intuitive,
-        and responsive web applications.
+        I'm a self-taught frontend software engineer building scalable web
+        applications and intuitive user experiences.
       </Heading>
     </Box>
   );
