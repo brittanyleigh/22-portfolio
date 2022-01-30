@@ -41,6 +41,11 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ config, colors });
+const fonts = {
+  heading: "Catamaran",
+  body: "Catamaran",
+};
+
+const theme = extendTheme({ config, colors, fonts });
 
 export default theme;
