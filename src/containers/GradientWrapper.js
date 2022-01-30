@@ -4,8 +4,8 @@ import { Box, useColorModeValue } from "@chakra-ui/react";
 import "@fontsource/catamaran";
 
 function GradientWrapper({ children }) {
-  const topGradient = useColorModeValue("blue.100", "blue.600");
-  const bottomGradient = useColorModeValue("green.400", "green.900");
+  const topGradient = useColorModeValue("blue.100", "blue.900");
+  const bottomGradient = useColorModeValue("green.100", "green.900");
 
   return (
     <Box bgGradient={`linear(to-b, ${topGradient}, ${bottomGradient})`}>
