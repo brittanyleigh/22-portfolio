@@ -17,5 +17,17 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `brittany-howard`,
+        short_name: `bhoward`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `minimal-ui`,
+        icon: `src/images/B-favicon.png`,
+      },
+    },
   ],
 };
