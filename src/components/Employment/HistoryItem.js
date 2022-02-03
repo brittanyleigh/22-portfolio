@@ -17,7 +17,7 @@ function HistoryItem({ heading, body, title, dates, icon }) {
 
   return (
     <AccordionItem borderColor={borderColor}>
-      <AccordionButton>
+      <AccordionButton _hover={{ background: borderColor }}>
         <Flex flex="1" textAlign="left" alignItems="center">
           <Heading as="h3" size="md" py={2}>
             {heading}
@@ -28,7 +28,7 @@ function HistoryItem({ heading, body, title, dates, icon }) {
       </AccordionButton>
 
       <AccordionPanel pb={4}>
-        <Box mb={2}>
+        <Box mb={4}>
           <Badge colorScheme="blue" variant="solid" fontSize="1rem">
             {title}
           </Badge>

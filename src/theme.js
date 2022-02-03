@@ -42,11 +42,20 @@ const colors = {
   },
 };
 
+const components = {
+  Link: {
+    baseStyle: (props) => ({
+      fontWeight: "bold",
+      color: props.colorMode === "dark" ? "blue.400" : "blue.700",
+    }),
+  },
+};
+
 const fonts = {
   heading: "Catamaran",
   body: "Catamaran",
 };
 
-const theme = extendTheme({ config, colors, fonts });
+const theme = extendTheme({ config, colors, fonts, components });
 
 export default theme;
