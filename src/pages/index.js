@@ -3,7 +3,7 @@ import { ChakraProvider, Container } from "@chakra-ui/react";
 
 import theme from "../theme.js";
 
-import GradientWrapper from "../containers/gradientWrapper";
+import GradientWrapper from "../containers/GradientWrapper";
 import Nav from "../components/Nav";
 import Employment from "../components/Employment";
 import Footer from "../components/Footer";
