@@ -14,7 +14,7 @@ function Home() {
       <GradientWrapper>
         <Container
           minH="100vh"
-          maxW="container.xl"
+          maxW="container.lg"
           display="flex"
           flexDir="column"
           justifyContent="space-between"
