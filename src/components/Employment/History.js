@@ -19,9 +19,9 @@ function History() {
           </Link>{" "}
           is a growing startup on a mission to transform data orchestration and
           make it easy for companies of any size to adopt Apache Airflow. I work
-          on building the frontend UI/UX in React for the Astronomer Cloud
-          application, and I'm the lead frontend engineer for the internal Cloud
-          management application.
+          on building the frontend UI/UX in React for the Astron application,
+          and I'm the lead frontend engineer for the internal Astro management
+          application.
         </>
       ),
       title: "Frontend Software Engineer",
