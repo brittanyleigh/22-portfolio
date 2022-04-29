@@ -3,7 +3,7 @@ import { ChakraProvider, Container } from "@chakra-ui/react";
 
 import theme from "../theme.js";
 
-import GradientWrapper from "../containers/GradientWrapper";
+import BackgroundWrapper from "../containers/BackgroundWrapper";
 import Nav from "../components/Nav";
 import Employment from "../components/Employment";
 import Footer from "../components/Footer";
@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <ChakraProvider theme={theme}>
-      <GradientWrapper>
+      <BackgroundWrapper>
         <Container
           minH="100vh"
           maxW="container.lg"
@@ -23,7 +23,7 @@ function Home() {
           <Employment />
           <Footer />
         </Container>
-      </GradientWrapper>
+      </BackgroundWrapper>
     </ChakraProvider>
   );
 }
