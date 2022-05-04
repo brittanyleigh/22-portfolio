@@ -25,6 +25,7 @@
     "chroma-js": "^2.3.0",
     "framer-motion": "^6.2.1",
     "gatsby": "^4.5.4",
+    "gatsby-background-image": "^1.6.0",
     "gatsby-plugin-image": "^2.5.2",
     "gatsby-plugin-manifest": "^4.6.0",
     "gatsby-plugin-react-helmet": "^5.5.0",

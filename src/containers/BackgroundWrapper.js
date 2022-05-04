@@ -1,21 +1,48 @@
 import React from "react";
-import { Box, useColorMode } from "@chakra-ui/react";
-
-import lightSky from "../images/sky-clouds.jpeg";
-import nightSky from "../images/night-sky.jpeg";
+import { graphql, useStaticQuery } from "gatsby";
+import { useColorMode } from "@chakra-ui/react";
 
 import "@fontsource/catamaran";
 import "@fontsource/just-me-again-down-here";
 
-function GradientWrapper({ children }) {
+import BackgroundImage from "gatsby-background-image";
+
+function BackgroundWrapper({ children }) {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        light: file(relativePath: { eq: "sky-clouds.jpeg" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        dark: file(relativePath: { eq: "night-sky.jpeg" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `
+  );
+
+  const lightImageData = data.light.childImageSharp.fluid;
+  const darkImageData = data.dark.childImageSharp.fluid;
   const { colorMode } = useColorMode();
-  const bgImage = colorMode == "light" ? lightSky : nightSky;
+  const imageData = colorMode == "light" ? lightImageData : darkImageData;
 
   return (
-    <Box backgroundImage={`url(${bgImage})`} backgroundSize="cover">
+    <BackgroundImage
+      Tag="section"
+      fluid={imageData}
+      backgroundColor={colorMode == "light" ? "blue.300" : "blue.900"}
+    >
       {children}
-    </Box>
+    </BackgroundImage>
   );
 }
 
-export default GradientWrapper;
+export default BackgroundWrapper;
