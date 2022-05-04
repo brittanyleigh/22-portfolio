@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, IconButton, useColorModeValue } from "@chakra-ui/react";
-import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiMail, FiGithub, FiLinkedin, FiShoppingCart } from "react-icons/fi";
 
 function Footer() {
   const iconColor = useColorModeValue("black", "white");
@@ -21,6 +21,11 @@ function Footer() {
       icon: <FiMail size="1.5em" />,
       link: "mailto:hello@brittany-howard.com",
       label: "Send Email",
+    },
+    {
+      icon: <FiShoppingCart size="1.5em" />,
+      link: "https://www.brittanyleighjewelry.com",
+      label: "Brittany Leigh Jewelry",
     },
   ];
 
