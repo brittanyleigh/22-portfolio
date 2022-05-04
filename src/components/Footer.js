@@ -13,12 +13,12 @@ function Footer() {
     },
     {
       icon: <FiLinkedin size="1.5em" />,
-      link: "https://www.linkedin.com/in/brittanyisenberg/",
+      link: "https://www.linkedin.com/in/brittanyhoward/",
       label: "View LinkedIn profile",
     },
     {
       icon: <FiMail size="1.5em" />,
-      link: "mailto:brittany.isenberg@gmail.com",
+      link: "mailto:hello@brittany-howard.com",
       label: "Send Email",
     },
   ];

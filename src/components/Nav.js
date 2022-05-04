@@ -24,7 +24,7 @@ function Nav() {
         <Heading
           size="2xl"
           fontWeight="500"
-          fontFamily="Just Me Again Down Here"
+          fontFamily="Just Me Again Down Here, Arial, sans-serif"
         >
           Brittany Howard
         </Heading>

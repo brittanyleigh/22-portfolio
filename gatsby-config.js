@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Brittany Howard | Frontend Software Engineer`,
-    siteUrl: `https://www.brittanyisenberg.com`,
+    siteUrl: `https://www.brittany-howard.com`,
   },
   plugins: [
     "gatsby-plugin-image",
