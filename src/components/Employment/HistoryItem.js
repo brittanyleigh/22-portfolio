@@ -29,7 +29,11 @@ function HistoryItem({ heading, body, title, dates, icon }) {
 
       <AccordionPanel pb={4}>
         <Box mb={4}>
-          <Badge colorScheme="blue" variant="solid" fontSize="1rem">
+          <Badge
+            colorScheme="blue"
+            variant="solid"
+            fontSize={{ base: ".9rem", sm: "1rem" }}
+          >
             {title}
           </Badge>
           <Text fontStyle="italic" fontSize=".9rem" pt={1}>
