@@ -4,6 +4,7 @@ import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 
 function Footer() {
   const iconColor = useColorModeValue("black", "white");
+  const hoverColor = useColorModeValue("blue.200", "blue.1000");
 
   const items = [
     {
@@ -40,7 +41,7 @@ function Footer() {
             p={4}
             m={2}
             color={iconColor}
-            _hover={{ color: "green.500" }}
+            _hover={{ color: hoverColor }}
           />
         );
       })}

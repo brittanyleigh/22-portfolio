@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import { useColorMode } from "@chakra-ui/react";
+import { useColorMode, useColorModeValue } from "@chakra-ui/react";
 
 import "@fontsource/catamaran";
 import "@fontsource/just-me-again-down-here";
@@ -32,13 +32,15 @@ function BackgroundWrapper({ children }) {
   const lightImageData = data.light.childImageSharp.fluid;
   const darkImageData = data.dark.childImageSharp.fluid;
   const { colorMode } = useColorMode();
+  const backgroundColor = useColorModeValue("blue.300", "blue.900");
+
   const imageData = colorMode == "light" ? lightImageData : darkImageData;
 
   return (
     <BackgroundImage
       Tag="section"
       fluid={imageData}
-      backgroundColor={colorMode == "light" ? "blue.300" : "blue.900"}
+      backgroundColor={backgroundColor}
     >
       {children}
     </BackgroundImage>
