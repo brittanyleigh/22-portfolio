@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex, IconButton, useColorModeValue } from "@chakra-ui/react";
-import { FiMail, FiGithub, FiLinkedin, FiShoppingCart } from "react-icons/fi";
+import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FaEtsy } from "react-icons/fa";
 
 function Footer() {
   const iconColor = useColorModeValue("black", "white");
@@ -23,8 +24,8 @@ function Footer() {
       label: "Send Email",
     },
     {
-      icon: <FiShoppingCart size="1.5em" />,
-      link: "https://www.brittanyleighjewelry.com",
+      icon: <FaEtsy size="1.5em" />,
+      link: "https://www.etsy.com/shop/BrittanyLeighJewelry",
       label: "Brittany Leigh Jewelry",
     },
   ];
