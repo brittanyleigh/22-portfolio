@@ -25,7 +25,7 @@ function History() {
         </>
       ),
       title: "Frontend Software Engineer",
-      dates: "January 2021 - Present",
+      dates: "January 2021 - April 2023",
       icon: <IoRocketOutline size="1.5em" />,
     },
     {
