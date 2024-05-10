@@ -8,12 +8,17 @@ import {
   AccordionPanel,
   Heading,
   useColorModeValue,
+  useColorMode,
   Text,
   Flex,
 } from "@chakra-ui/react";
 
 function HistoryItem({ heading, body, title, dates, icon }) {
-  const borderColor = useColorModeValue("blue.200", "blue.900");
+  const borderColor = useColorModeValue("green.200", "purple.700");
+
+  const { colorMode } = useColorMode();
+
+  const badgeColor = colorMode == "light" ? "green" : "purple";
 
   return (
     <AccordionItem borderColor={borderColor}>
@@ -30,7 +35,7 @@ function HistoryItem({ heading, body, title, dates, icon }) {
       <AccordionPanel pb={4}>
         <Box mb={4}>
           <Badge
-            colorScheme="blue"
+            colorScheme={badgeColor}
             variant="solid"
             fontSize={{ base: ".9rem", sm: "1rem" }}
           >

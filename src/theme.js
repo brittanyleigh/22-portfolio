@@ -14,7 +14,8 @@ const generateColors = (color500) => {
 };
 
 const blues = generateColors("#6abded");
-const greens = generateColors("#8cd86e");
+const greens = generateColors("#66662f");
+const purples = generateColors("#A092B3");
 
 const colors = {
   blue: {
@@ -39,6 +40,17 @@ const colors = {
     700: greens(0.75).hex(),
     800: greens(0.875).hex(),
     900: greens(1).hex(),
+  },
+  purple: {
+    100: purples(0).hex(),
+    200: purples(0.125).hex(),
+    300: purples(0.25).hex(),
+    400: purples(0.375).hex(),
+    500: purples(0.5).hex(),
+    600: purples(0.625).hex(),
+    700: purples(0.75).hex(),
+    800: purples(0.875).hex(),
+    900: purples(1).hex(),
   },
 };
 

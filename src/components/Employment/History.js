@@ -3,13 +3,29 @@ import { Box, Accordion, Link, useColorModeValue } from "@chakra-ui/react";
 import HistoryItem from "./HistoryItem";
 
 import { BsSignpost2 } from "react-icons/bs";
+import { PiBabyCarriage } from "react-icons/pi";
 import { IoRocketOutline, IoTicketOutline } from "react-icons/io5";
+import { LiaBabyCarriageSolid } from "react-icons/lia";
 
 function History() {
-  const borderColor = useColorModeValue("blue.200", "blue.900");
-  const backgroundColor = useColorModeValue("white", "blue.1000");
+  const borderColor = useColorModeValue("green.200", "purple.700");
+  const backgroundColor = useColorModeValue("white", "purple.800");
 
   const historyItems = [
+    {
+      heading: "Maternity Leave",
+      body: (
+        <>
+          Laid off just a month after my daughter was born, I took the
+          opportunity to enjoy an extended maternity leave. As I look to reenter
+          the workforce, my priority is doing meaningful work that fosters
+          community, leaves a positive impact, and helps others thrive.
+        </>
+      ),
+      title: "Stay at Home Mom",
+      dates: "April 2023 - Present",
+      icon: <LiaBabyCarriageSolid size="1.5em" />,
+    },
     {
       heading: "Astronomer",
       body: (

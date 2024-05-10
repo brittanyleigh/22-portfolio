@@ -11,14 +11,14 @@ function BackgroundWrapper({ children }) {
   const data = useStaticQuery(
     graphql`
       query {
-        light: file(relativePath: { eq: "sky-clouds.jpeg" }) {
+        light: file(relativePath: { eq: "day-2024.jpeg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
-        dark: file(relativePath: { eq: "night-sky.jpeg" }) {
+        dark: file(relativePath: { eq: "dark-2024.jpeg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp

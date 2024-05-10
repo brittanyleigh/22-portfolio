@@ -5,7 +5,7 @@ import { FaEtsy } from "react-icons/fa";
 
 function Footer() {
   const iconColor = useColorModeValue("black", "white");
-  const hoverColor = useColorModeValue("blue.200", "blue.1000");
+  const hoverColor = useColorModeValue("green.500", "purple.700");
 
   const items = [
     {

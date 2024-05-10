@@ -14,6 +14,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const toggleColor = useColorModeValue("black", "white");
+  const hoverColor = useColorModeValue("green.500", "purple.800");
   const ariaLabel = colorMode == "light" ? "Toggle Dark" : "Toggle Light";
   const icon =
     colorMode == "light" ? <FiMoon size="1.5em" /> : <FiSun size="1.5em" />;
@@ -38,7 +39,7 @@ function Nav() {
         variant="unstyled"
         colorScheme="blue"
         color={toggleColor}
-        _hover={{ color: "blue.500" }}
+        _hover={{ color: hoverColor }}
       />
     </Flex>
   );
