@@ -11,8 +11,9 @@ function Intro() {
         fontSize={{ base: "xl", md: "2xl" }}
         fontWeight="bold"
       >
-        Jewelry maker turned frontend software engineer. Passionate
-        about creating elegant, polished and intuitive UX for innovative web applications.
+        Hello! I'm a thoughtful, meticulous, and creative frontend software
+        engineer with a passion for creating beautiful and intuitive UX that
+        brings to life meaningful, impactful products.
       </Text>
     </Box>
   );
