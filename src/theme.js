@@ -58,7 +58,7 @@ const components = {
   Link: {
     baseStyle: (props) => ({
       fontWeight: "bold",
-      color: props.colorMode === "dark" ? "blue.400" : "blue.700",
+      color: props.colorMode === "dark" ? "purple.500" : "green.500",
     }),
   },
 };
